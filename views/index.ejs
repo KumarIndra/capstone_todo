@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+<div class="container py-3 d-flex flex-column align-items-center justify-content-center ">
+   
+    <form class="row my-3" action="/" method="post">
+        <div>
+        <input type="text" class="inputText" name="today_task" id="today" placeholder="Type your Task!!">
+        <button type="submit" class="buttoncustom">
+            <img width="50" height="50" src="https://img.icons8.com/plasticine/100/add--v1.png" alt="add--v1"/>
+        </button>
+        </div>
+    </form>
+    <div class="card my-2" style="width: 18rem;">
+        <div class="card-header text-center">
+          Today Task:
+        </div>
+        <ul class="list-group list-group-flush text-center">
+            <% console.log(locals.taskToday); %>
+            <% if(locals.taskToday && locals.taskToday.length > 0) {%>
+                <% taskToday.forEach((element) => { %>
+                    <div class="taskflex">
+                        <input type="checkbox" name="checkboxs" aria-label="Checkbox for following text input">
+                        <li class="list-group-item"><%= element %></li>
+                    </div>
+                <% }) %>
+                <% } else {%>
+                    <li class="list-group-item">No Task Assigned</li> 
+                    <% } %>
+        </ul>
+      </div>
+</div>
+<%- include("partials/footer.ejs") %>

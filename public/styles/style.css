@@ -1,0 +1,44 @@
+body {
+    background-color: #FFF2D8;
+    color: #113946;
+}
+
+.headercolor {
+    background-color: #EAD7BB;
+}
+.nav {
+    --bs-nav-link-color:#b87f2e;
+    --bs-nav-link-hover-color: #113946;
+}
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #113946;
+}
+
+.buttoncustom {
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.inputText{
+    border: none;
+    outline: none;
+    height: 43px;
+    width: 200px;
+}
+
+.btnImg {
+    border-radius: 50%;
+}
+
+.taskflex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 10px;
+    border-bottom: 0.5px solid grey;
+}
+
+.list-group-item {
+    border: none;
+}
